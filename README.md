@@ -8,7 +8,7 @@
 sisteminha sendo utilizado
 
 ## Breve comentário
-  Outri dia me peguei perdendo tempo para encontrar um site gerador de QRCode simples e rápido, sem aquele monte de propagandas e requisitos para uso.
+  Outro dia me peguei perdendo tempo para encontrar um site gerador de QRCode simples e rápido, sem aquele monte de propagandas e requisitos para uso.
 
 ## Na criação
   Foi utilizado um guia para utilização das bibliotecas e um estudo para juntar as bibliotecas e utilizar.

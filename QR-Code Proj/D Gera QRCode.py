@@ -40,4 +40,4 @@ generate_button.pack()
 code_label = Label(jan)                                                             # Rotulo para exibir o QRCode gerado
 code_label.pack()
 
-jan.mainloop()                                                                      # mantem a janela aberta
+jan.mainloop()                                                                      # mantem a janela aberta       #FIM

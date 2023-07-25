@@ -1,7 +1,7 @@
 # D-Gera-QRCode
 
 ![python](https://img.shields.io/badge/Python%20--%20blue?link=https%3A%2F%2Fwww.python.org/)
-![windowns](https://img.shields.io/badge/windows%20--%20gray)
+![windowns](https://img.shields.io/badge/windows%20--%20yellow)
 
 ![D Gera QRcode](https://github.com/DiegoVelosoS/D-Gera-QRCode/assets/124423575/e98856a4-a2d3-44cf-b594-0c1a32b4a549)
 sisteminha sendo utilizado

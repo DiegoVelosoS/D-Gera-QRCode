@@ -1,7 +1,5 @@
 ﻿# D-Gera-QRCode
 
- # COBRA DO DIEGO
-
 ![python](https://img.shields.io/badge/Python%20--%20blue?link=https%3A%2F%2Fwww.python.org/)
 ![pygame](https://img.shields.io/badge/Pygame%20--%20yellow?link=https%3A%2F%2Fwww.pygame.org%2Fnews)
 ![windowns](https://img.shields.io/badge/windows%20--%20gray)

@@ -1,0 +1,18 @@
+/*MODAL 1*/
+$(document).ready(function(){
+
+   $(".fecha-modal-cookie").click(function() {
+       $(".modal-cookie-janela").fadeOut(400);
+   });
+   
+});
+/*MODAL*/
+
+$(document).ready(function() {   
+
+  if($.cookie("view") == null) {
+     $('.modal-cookie-janela').hide().delay(1500).fadeIn(400); 
+     $.cookie("view", "2");
+  }
+
+});

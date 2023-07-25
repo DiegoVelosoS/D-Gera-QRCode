@@ -1,0 +1,21 @@
+define("discourse/plugins/discourse-spoiler-alert/initializers/spoiler-alert",["exports","discourse/lib/plugin-api","discourse/controllers/composer","discourse/plugins/discourse-spoiler-alert/lib/apply-spoiler","discourse/lib/to-markdown"],(function(e,i,t,r,s){"use strict"
+function l(e){e.querySelectorAll(".spoiler").forEach((e=>{e.classList.remove("spoiler"),e.classList.add("spoiled"),(0,r.default)(e)}))}function o(e){e.decorateCookedElement(l,{id:"spoiler-alert"}),e.addToolbarPopupMenuOptionsCallback((()=>({action:"insertSpoiler",icon:"magic",label:"spoiler.title"}))),t.default.reopen({actions:{insertSpoiler(){this.get("toolbarEvent").applySurround("[spoiler]","[/spoiler]","spoiler_text",{multiline:!1,useBlockMode:!0})}}}),(0,s.addTagDecorateCallback)((function(){"spoiled"===this.element.attributes.class&&(this.prefix="[spoiler]",this.suffix="[/spoiler]")})),(0,s.addBlockDecorateCallback)((function(e){const{name:i,attributes:t}=this.element
+if("div"===i&&"spoiled"===t.class)return this.prefix="[spoiler]",this.suffix="[/spoiler]",e.trim()}))}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0,e.initializeSpoiler=o
+var a={name:"spoiler-alert",initialize(e){e.lookup("site-settings:main").spoiler_enabled&&(0,i.withPluginApi)("1.3.0",o)}}
+e.default=a})),define("discourse/plugins/discourse-spoiler-alert/lib/apply-spoiler",["exports","I18n"],(function(e,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(e){r(e),e.addEventListener("click",(i=>{s(i,e)})),e.addEventListener("keydown",(i=>{"Enter"===i.key&&s(i,e)}))}
+const t=["a","area","audio","button","details","embed","iframe","img.animated","input","map","object","option","portal","select","textarea","track","video",".lightbox"].join(", ")
+function r(e){const t={role:"button",tabindex:"0","data-spoiler-state":"blurred","aria-expanded":!1,"aria-label":i.default.t("spoiler.label.show")}
+Object.entries(t).forEach((i=>{let[t,r]=i
+e.setAttribute(t,r)})),e.classList.add("spoiler-blurred"),Array.from(e.children).forEach((e=>{e.setAttribute("aria-hidden",!0)}))}function s(e,s){"blurred"===s.getAttribute("data-spoiler-state")?(function(e){const t={"data-spoiler-state":"revealed","aria-expanded":!0,"aria-label":i.default.t("spoiler.label.hide"),"aria-live":"polite"}
+Object.entries(t).forEach((i=>{let[t,r]=i
+e.setAttribute(t,r)})),e.classList.remove("spoiler-blurred"),Array.from(e.children).forEach((e=>{e.removeAttribute("aria-hidden")}))}(s),e.preventDefault()):function(e){return e.defaultPrevented||e.target.closest(t)}(e)||r(s)}})),define("discourse/plugins/discourse-spoiler-alert/lib/discourse-markdown/spoiler-alert",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.setup=function(e){e.allowList(["span.spoiler","div.spoiler"]),e.markdownIt?function(e){e.registerOptions(((e,i)=>{e.features["spoiler-alert"]=!!i.spoiler_enabled})),e.registerPlugin((e=>{e.inline.bbcode.ruler.push("spoiler",{tag:"spoiler",wrap:"span.spoiler"}),e.block.bbcode.ruler.push("spoiler",{tag:"spoiler",wrap:"div.spoiler"})}))}(e):e.addPreProcessor(r)}
+const i=/\n|<img|!\[[^\]]*\][(\[]/
+function t(e,t){const r=i.test(t)?"div":"span"
+return`<${r} class='spoiler'>${t}</${r}>`}function r(e){for(e=e||"";e!==(e=e.replace(/\[spoiler\]((?:(?!\[spoiler\]|\[\/spoiler\])[\S\s])*)\[\/spoiler\]/gi,t)););return e}}))
+
+//# sourceMappingURL=discourse-spoiler-alert-606ffa628498b6b38cdd3f16c488a9e0a14a083c494e0203ed432c0a3c1f7b0d.map
+//!
+
+;

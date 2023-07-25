@@ -14,24 +14,25 @@ sisteminha sendo utilizado
   Foi utilizado um guia para utilização das bibliotecas e um estudo para juntar as bibliotecas e utilizar.
 
 ### 1. Planejamento
-  Inicialmente, fizemos um planejamento simples para traçar a identação do código.
-  Definimos que:
-                1º Iniciariamos com os comandos que transforma o texto em código;
-                2º Com o código funcional, definir onde aparecerá o código (em arquivo ou em tela);
-                3º O QRCode será, apenas, exibição na tela;
-                  * Ao menos nesse 1º momento do projeto o foco é gerar um QRCode funcional.
-                4º Criação de uma interface para usuários comuns usarem o sistema.
-                5º A interface deverá conter apenas, um texto para orientação, uma espaço para inclução do texto que será convertido
-                    em QRcode e uma  botão para gerar a conversão.
+  Inicialmente, fizemos um planejamento simples para traçar a identação do código.</br>
+  Definimos que:</br>
+  - [x] 1º Iniciariamos com os comandos que transforma o texto em código;</br>
+  - [x] 2º Com o código funcional, definir onde aparecerá o código (em arquivo ou em tela);</br>
+  - [x] 3º O QRCode será, apenas, exibição na tela;</br>
+      * Ao menos nesse 1º momento do projeto o foco é gerar um QRCode funcional.</br>
+  - [x] 4º Criação de uma interface para usuários comuns usarem o sistema.</br>
+  - [x] 5º A interface deverá conter apenas, um texto para orientação, uma espaço para inclução do texto que será convertido</br>
+        em QRcode e uma  botão para gerar a conversão.</br>
+  - [ ] 6º Exportar o código ```.py``` para um arquivo ```.exe```
 
 ### 2. Finalização do código
   No final do dia, fizemos o fechamento com anotações das operações e comandos no código e o commit.
 
 ### 3. Export como .EXE para usuários comuns
-  Nesse 1º momento não conseguimos o export pelo ```auto-py-te-exe``` por conflito com a biblioteca ```TKinter```.
+  Nesse 1º momento não conseguimos o export pelo ```auto-py-te-exe``` por conflito com a biblioteca ```TKinter```.</br>
   Assim o ```.exe``` vai ficar para um próximo commit.
 
-### 4. Tecnologias Usadas
+## Tecnologias Usadas
 * VS-Code
 * Python
-* Auto Py to Exe [error]
+* ~~Auto-py-to-exe~~ **[error export]**

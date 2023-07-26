@@ -2,9 +2,10 @@
 
 ![python](https://img.shields.io/badge/Python%20--%20blue?link=https%3A%2F%2Fwww.python.org/)
 ![windowns](https://img.shields.io/badge/windows%20--%20yellow)
-
-![D Gera QRcode](https://github.com/DiegoVelosoS/D-Gera-QRCode/assets/124423575/e98856a4-a2d3-44cf-b594-0c1a32b4a549)
+<div align="center">
+<img align="center" src="https://github.com/DiegoVelosoS/D-Gera-QRCode/assets/124423575/44229b3e-a90f-4fc2-9eed-a769b292dd27"></br>
 sisteminha sendo utilizado
+</div></br>
 
 ## Breve comentário
   Outro dia me peguei perdendo tempo para encontrar um site gerador de QRCode simples e rápido, sem aquele monte de propagandas e requisitos para uso.

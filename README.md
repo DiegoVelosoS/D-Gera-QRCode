@@ -23,16 +23,16 @@ sisteminha sendo utilizado
   - [x] 4º Criação de uma interface para usuários comuns usarem o sistema.</br>
   - [x] 5º A interface deverá conter apenas, um texto para orientação, uma espaço para inclução do texto que será convertido</br>
         em QRcode e uma  botão para gerar a conversão.</br>
-  - [ ] 6º Exportar o código ```.py``` para um arquivo ```.exe```
+  - [x] 6º Exportar o código ```.py``` para um arquivo ```.exe```
 
 ### 2. Finalização do código
   No final do dia, fizemos o fechamento com anotações das operações e comandos no código e o commit.
 
 ### 3. Export como .EXE para usuários comuns
-  Nesse 1º momento não conseguimos o export pelo ```auto-py-te-exe``` por conflito com a biblioteca ```TKinter```.</br>
-  Assim o ```.exe``` vai ficar para um próximo commit.
+  Fizemos o export pelo ```auto-py-te-exe```.</br>
+  Assim, com o arquivo onefile ```.exe``` vai ficar fácil para qualquer usuário de windows rodar o sistema de gerar QRCodes.
 
 ## Tecnologias Usadas
 * VS-Code
 * Python
-* ~~Auto-py-to-exe~~ **[error export]**
+* Auto-py-to-exe
